@@ -27,6 +27,7 @@
 }
 
 .page-row {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,6 +44,22 @@
   padding-bottom: 18px;
   border-bottom: 0.7px solid #CDCDCD;
   margin-bottom: 2px;
+}
+
+
+.page-row.heading:hover .page-checkbox {
+  border-color: #BDBDBD;
+}
+
+.page-row.heading:hover .page-checkbox::after {
+  content: '';
+  width: 6px;
+  height: 12px;
+  border-right: 1px solid #E3E3E3;
+  border-bottom: 1px solid #E3E3E3;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
 }
 
 .page-label {
