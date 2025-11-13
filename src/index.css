@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Montserrat-Medium';
-  src: url('./assets/font/Montserrat-Medium.ttf') format('truetype');
-  font-weight: 500;
+  font-family: 'Montserrat-Regular';
+  src: url('./assets/font/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
