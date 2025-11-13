@@ -77,6 +77,25 @@
   justify-content: center;
   position: relative;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.page-checkbox:focus:not(.checked) {
+  border: 1px solid #CDCDCD;
+  background: #ffffff;
+  outline: 2px solid #B3D9FF;
+  outline-offset: 2px;
+}
+
+.page-checkbox:focus:not(.checked)::after {
+  content: '';
+  width: 6px;
+  height: 12px;
+  border-right: 1px solid #9E9E9E;
+  border-bottom: 1px solid #9E9E9E;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
 }
 
 .page-checkbox.checked {

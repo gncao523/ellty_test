@@ -37,7 +37,10 @@ function App() {
               <span className={`page-label ${type === 'heading' ? 'bold' : ''}`}>
                 {label}
               </span>
-              <span className={`page-checkbox ${checkedItems.has(label) ? 'checked' : ''}`} />
+              <span 
+                className={`page-checkbox ${checkedItems.has(label) ? 'checked' : ''}`}
+                tabIndex={0}
+              />
             </div>
           ))}
         </div>
