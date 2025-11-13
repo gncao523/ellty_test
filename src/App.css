@@ -46,12 +46,11 @@
   margin-bottom: 2px;
 }
 
-
-.page-row.heading:hover .page-checkbox:not(.checked) {
+.page-row.heading:hover .page-checkbox:not(.checked):not(.interacted) {
   border-color: #BDBDBD;
 }
 
-.page-row.heading:hover .page-checkbox:not(.checked)::after {
+.page-row.heading:hover .page-checkbox:not(.checked):not(.interacted)::after {
   content: '';
   width: 6px;
   height: 12px;
@@ -80,14 +79,14 @@
   outline: none;
 }
 
-.page-checkbox:focus:not(.checked) {
+.page-checkbox:focus:not(.checked):not(.interacted) {
   border: 1px solid #CDCDCD;
   background: #ffffff;
   outline: 2px solid #B3D9FF;
   outline-offset: 2px;
 }
 
-.page-checkbox:focus:not(.checked)::after {
+.page-checkbox:focus:not(.checked):not(.interacted)::after {
   content: '';
   width: 6px;
   height: 12px;

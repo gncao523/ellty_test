@@ -11,8 +11,10 @@ function App() {
   ]
 
   const [checkedItems, setCheckedItems] = useState(new Set())
+  const [interactedItems, setInteractedItems] = useState(new Set())
 
   const toggleCheckbox = (label) => {
+    setInteractedItems(prev => new Set(prev).add(label))
     setCheckedItems(prev => {
       const newSet = new Set(prev)
       if (newSet.has(label)) {
@@ -38,7 +40,7 @@ function App() {
                 {label}
               </span>
               <span 
-                className={`page-checkbox ${checkedItems.has(label) ? 'checked' : ''}`}
+                className={`page-checkbox ${checkedItems.has(label) ? 'checked' : ''} ${interactedItems.has(label) ? 'interacted' : ''}`}
                 tabIndex={0}
               />
             </div>
