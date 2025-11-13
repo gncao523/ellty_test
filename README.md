@@ -1,16 +1,94 @@
-# React + Vite
+# Ellty UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite application featuring an interactive checkbox selection interface for page management.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive Checkbox Selection**: Select/deselect pages with custom-styled checkboxes
+- **Smart Hover Effects**: Hover effects are automatically disabled after user interaction for a cleaner UX
+- **Responsive Design**: Mobile-friendly layout that adapts to different screen sizes
+- **Custom Styling**: Modern UI with Montserrat font and custom checkbox design
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19.2.0** - UI library
+- **Vite 7.2.2** - Build tool and dev server
+- **ESLint** - Code linting
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Start the development server:
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build
+
+Create a production build:
+```bash
+npm run build
+```
+
+### Preview
+
+Preview the production build:
+```bash
+npm run preview
+```
+
+### Linting
+
+Run ESLint to check code quality:
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+ellty_test/
+├── src/
+│   ├── App.jsx          # Main application component
+│   ├── App.css          # Application styles
+│   ├── index.css        # Global styles and font definitions
+│   └── main.jsx         # Application entry point
+├── public/              # Static assets
+└── dist/                # Production build output
+```
+
+## Features in Detail
+
+### Checkbox Behavior
+
+- Click any row to toggle the checkbox state
+- Once a checkbox is interacted with, hover effects are permanently disabled
+- Checkboxes maintain their checked/unchecked state
+- Custom blue checkmark appears when checked
+
+### Styling
+
+- Uses Montserrat Regular font for typography
+- Custom checkbox design with rounded corners
+- Smooth transitions and hover states
+- Responsive breakpoints for mobile devices
+
+## License
+
+Private project
