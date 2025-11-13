@@ -47,11 +47,11 @@
 }
 
 
-.page-row.heading:hover .page-checkbox {
+.page-row.heading:hover .page-checkbox:not(.checked) {
   border-color: #BDBDBD;
 }
 
-.page-row.heading:hover .page-checkbox::after {
+.page-row.heading:hover .page-checkbox:not(.checked)::after {
   content: '';
   width: 6px;
   height: 12px;
@@ -80,8 +80,8 @@
 }
 
 .page-checkbox.checked {
-  border-color: #2f61ff;
-  background: linear-gradient(180deg, #2f61ff 0%, #2150dc 100%);
+  background-color: #5087F8;
+  border: none;
 }
 
 .page-checkbox.checked::after {
@@ -92,7 +92,7 @@
   border-bottom: 2px solid #ffffff;
   transform: rotate(45deg);
   position: absolute;
-  top: 2px;
+  top: 3px;
 }
 
 .page-button {
